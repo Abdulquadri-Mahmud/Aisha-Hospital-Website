@@ -1,0 +1,852 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: rgb(229, 233, 235);
+    --color2: #fff;
+    --color3: rgb(2, 21, 42);
+    --background-color: rgb(2, 21, 42);
+}
+body{
+    background-color: var(--color2);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+.topHeader{
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.topHeader a{
+    color: var(--color);
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.topHeader a:hover{
+    color: gray;
+}
+.topHeader a i{
+    padding-right: 5px;
+}
+.nav_cont{
+    display: block;
+}
+.side_menu{
+    display: none;
+}
+header .nav_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    background-color: var(--color2);
+    box-shadow:2px 2px 2px #747474;
+}
+.logo h1{
+    color: var(--color3);
+    font-size: 35px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0px 6px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--color3);
+    position: relative;
+}
+nav ul li a:hover{
+    color: gray;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: var(--background-color);
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+.logSign a{
+    padding: 0px 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color3);
+    text-decoration: none;
+}
+.logSign a:hover{
+    color: gray;
+}
+.logSign a i{
+    padding-right: 5px;
+}
+.logSign i{
+    color: var(--color3);
+}
+section.container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
+    /* box-shadow: 0px 15px 20px -20px rgb(97, 97, 97);   */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.headText, .headImage{
+    width: 46%;
+}
+.headText{
+    padding: 0px 0px 0px 20px;
+}
+.headText .playRole{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.headText .playRole::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(34, 34, 34);
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }50%{
+        width: 70px;
+        height: 70px;
+    }100%{
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+.headText .playRole i{
+    color: var(--color2);
+    font-size: 25px;
+}
+
+.heading{
+    padding-top: 25px;
+}
+.heading h1{
+    line-height: 50px;
+    font-size: 30px;
+}
+.heading h1 span{
+    color: var(--color3);
+}
+.headingContent p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.contactButton{
+    padding-top: 12px;
+}
+.contactButton button{
+    width: 140px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.contactButton button:hover{
+    background-color: rgb(62, 96, 144);
+}
+.contactButton button a{
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 16px;
+}
+.headingContent {
+    padding: 15px 0px;
+}
+.headImage img{
+    max-width: 100%;
+}
+
+/*************************Book Appointment Section************************/
+.bookPointCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0vh 5vh;
+}
+.bookPointWrap{
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(215, 213, 213),
+    -2px -2px 5px rgb(215, 213, 213); 
+    background-color: var(--color2);
+}
+.bookPointWrap form{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bookPointWrap h1{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.bookPointWrap h1 span{
+    color: var(--color3);
+}
+.bookPointWrap form label{
+    text-align: center;
+    font-size: 14px;
+}
+.bookPointWrap form label input{
+    margin: 10px 0px;
+    width:250px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--color3);
+    background-color: transparent;
+    text-indent: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.bookPointWrap form label input:focus{
+    background-color: var(--color);
+}
+.bookPointWrap form label input::placeholder{
+    text-indent: 20px;
+}
+.bookPointWrap form #department{
+    margin: 10px 0px;
+    width:250px;
+    height: 30px;
+    border: 2px solid var(--color3);
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 5px;
+}
+.submitButton{
+    width: 100%;
+    margin-top: 5vh;
+}
+.submitButton button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--color2);
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.submitButton button:hover{
+    background-color: rgb(8, 25, 97);
+}
+
+/*************************Book Appointment Section************************/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7vh 0vh;
+}
+.about main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main .image, main .aboutContent{
+    width: 46%;
+}
+main .aboutContent h2{
+    padding-bottom: 15px;
+}
+main .aboutContent h2 span{
+    color: var(--color3);
+}
+.about main .image img{
+    max-width: 100%;
+}
+main .submitButton{
+    padding-top: 15px;
+}
+main .submitButton button a{
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.hospitalCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.hospital{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hospitalText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hospitalText h1{
+    width: 250px;
+    padding: 8px 0px;
+    font-size: 25px;
+    text-align: center;
+    border-top: 3px solid rgb(34, 34, 34);
+    border-bottom: 3px solid rgb(34, 34, 34);
+}
+.hospitalText h1 span{
+    /* color: var(--color3); */
+}
+.hospitalText h2{
+    text-align: center;
+}
+.hospital .box{
+    width: 250px;
+    padding: 20px;
+    /* margin: 0vh 5px; */
+}
+.hospital .box .img{
+    padding: 10px;
+}
+
+/****************** Doctors section **********************/
+.drCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.drWrap{
+    width: 100%;
+    padding: 25px;
+    background-color: var(--background-color);
+}
+.doctorsText{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+.doctorsText h1{
+    text-align: center;
+    font-size: 25px;
+    padding: 6px;
+    width: 170px;
+    border-top: 3px solid var(--color2);
+    border-bottom: 3px solid var(--color2);
+    color: var(--color2);
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_header{
+    width: 45%;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(134, 134, 134, 0.11);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    width: 100%;
+    padding: 25px;
+}
+.indicator_cont{
+    position: relative;
+    width: 100%;
+    
+}
+.indicator_wrap{
+    position: absolute;
+    left: -60px;
+    margin: 0vh 0vh;
+}
+.slider_img{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_img img{
+    max-width:50%;
+}
+.slideBtn1,.slideBtn2{
+    position: relative;
+}
+.slideBtn1 button{
+    position: absolute;
+    left: -28px;
+}
+.slideBtn2 button{
+    position: absolute;
+    right: -28px;
+}
+.slideBtn1 button, .slideBtn2 button{
+    width: 30px;
+    height: 50px;
+    background: rgba(134, 134, 134, 0.11);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+}
+.slider_header h3{
+    color: var(--color2);
+    padding-top: 4vh;
+    font-size: 20px;
+}
+.slider_header p{
+    color: var(--color2);
+    padding-top: 5vh;
+    line-height: 22px;
+    font-size: 16px;
+}
+.slider_header .link a{
+  text-decoration: none;
+  color: var(--color2);
+  padding: 0px 8px;
+}
+.testimonialCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.testimonialWrap{
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+}
+.testimonialHeader h1{
+    font-size: 25px;
+    border-top: 3px solid var(--color3);
+    border-bottom: 3px solid var(--color3);
+    width: 170px;
+}
+.testimonialWrap h2{
+    font-size: 20px;
+    padding: 15px 0px;
+}
+.TouchCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.touchWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.touchWrap form.contactForm, .touchWrap > .touchImage{
+    width: 47%;
+    padding: 0px;
+}
+.contactForm h1{
+    font-size: 25px;
+    color: var(--color3);
+}
+.touchWrap form.contactForm input{
+    width:100%;
+    height: 43px;
+    padding:0px 7px;
+    border: 1px solid var(--color3);
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin: 2vh 0vh;
+    
+}
+.touchWrap form input:focus{
+    background-color: var(--color);
+}
+.touchWrap form.contactForm textarea{
+    width: 100%;
+    height: 75px;
+    border: 1px solid var(--color3);
+    outline: none;
+    border-radius: 5px;
+    margin: 2vh 0vh 0vh;
+}
+/* .touchWrap .touchImage{
+} */
+.touchWrap .touchImage img{
+    max-width: 100%;
+}
+
+footer{
+    background-color: rgb(2, 21, 42);
+    padding: 30px 30px 5px;
+}
+.footerSector{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .Logo h1{
+    color: var(--color2);
+    font-size: 25px;
+}
+.subscribeInput{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.subscribeInput input{
+    color: var(--color2);
+    font-size: 13px;
+    width: 70%;
+    height: 35px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--color2);
+    outline: none;
+}
+.subscribeInput input::placeholder{
+    text-indent: 10px;
+    color: grey;
+}
+.subscribeInput input:focus{
+    background-color: transparent;
+}
+.subscribeInput button{
+    position: absolute;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color2);
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+footer .footerSector2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8vh 0vh 5vh;
+}
+.footerSector2 .address .addressText h1,.usefulLinksTexts h1{
+    width: 100px;
+    border-top: 3px solid var(--color2);
+    border-bottom: 3px solid var(--color2);
+    font-size: 20px;
+    color: var(--color2);
+    padding: 7px 0px;
+}
+.footerSector2 .address p{
+    padding: 5px 0px;
+}
+.footerSector2 .address p a{
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 16px;
+}
+.footerSector2 .address p a i{
+    padding-left: 4px;
+}
+.footerSector2 .address .link a {
+    color: var(--color2);
+    padding:0px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.footerSector2 .address .link a:hover{
+    color: grey;
+    transform: scaleX(.6);
+}
+.usefulLinksTexts h1{
+    width: 130px;
+    border-top: 3px solid var(--color2);
+    border-bottom: 3px solid var(--color2);
+    font-size: 20px;
+    color: var(--color2);
+    padding: 7px 0px;
+}
+.usefulLinks .usefulLink a{
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 16px;
+    display: block;
+}
+.usefulLinks ul li a:hover{
+    color: grey;
+}
+.copyright p{
+    text-align: center;
+    color: var(--color2);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width:480px) {
+    footer .footerSector2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .usefulLinks{
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header > .nav_cont{
+        display: none;
+    }
+    .side_menu{
+        display: block;
+    }
+    .headText, .headImage{
+        width: 90%;
+    }
+    main .image, main .aboutContent{
+        width: 90%;
+    }
+   .side_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        width: 100%;
+   }
+   .side_menu .logo h1{
+        color: var(--color3);
+        font-size: 25px;
+        font-weight: 600;
+   }
+   .side_bar{
+        position: relative;
+   }
+   .side_bar .menu i{
+        font-size: 30px;
+        color: var(--color3);
+   }
+   .side_menus{
+        position:fixed;
+        right: 0;
+        top: 0;
+        width: 0px;
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--background-color);
+        z-index: 1;
+        transition:width 0.8s;
+   }
+   .side_bar:hover >  .side_menus{
+        width: 85%;
+   }
+   .side_menus .accordion:nth-child(1){
+        margin-top: 10vh;
+   }
+   .side_menus .accordion input[type="radio"]{
+        display: none;
+   }
+   .side_menus .accordion {
+        padding: 0px 20px;
+   }
+   .side_menus .accordion label{
+        display: block;
+        padding: 10px;
+        z-index: 2;
+        font-size: 20px;
+        color: var(--color);
+   }
+   .side_menus .accordion label:hover{
+        background-color: rgb(2, 21, 42);
+        border-radius: 5px;
+   }
+   .accordion_content{
+        padding: 0;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        transition: 0.3s linear;
+   }
+   input:checked ~ .accordion_content{
+        padding: 15px;
+        opacity: 1;
+        max-height: 100%;
+        z-index: 1;
+   }
+   .menu .menu_list{
+       margin-top: 3rem;
+       padding: 0px 20px;
+   }
+   .menu .menu_list li{
+        padding: 1.5rem 2.5rem;
+        list-style: none;
+        transition: all 0.6s;
+   }
+   .menu .menu_list li i{
+       padding: 0px 8px 0px 0px;
+       font-size: 1.5rem;
+   }
+   .menu .menu_list li a{
+        text-decoration: none;
+        color:var(--color);
+        font-size: 16px;
+        font-weight: 600;
+        position:relative;
+   }
+   .menu .menu_list li a:hover{
+       color: grey;
+   }
+   .menu .menu_list li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        background-color:var(--color);
+        transition: all 0.5s;
+   }
+   .menu_list li a:hover::after{
+        width: 100%;
+   }
+   .logSign2{
+        display: flex;
+        justify-content: space-around;
+   }
+   .logSign2 a{
+        color: var(--color2);
+        text-decoration: none;
+        font-size: 16px;
+   }
+   .TouchCont{
+        padding: 0px;
+   }
+   .bookPointWrap{
+        width: 95%;
+   }
+   .bookPointWrap form label input{
+        width:300px;
+   }
+   .bookPointWrap form #department{
+        width: 300px;
+   }
+   .subscribeInput {
+        width: 95%;
+   }
+   .subscribeInput input{
+        width: 90%;
+   }
+   /****************** Doctors section **********************/
+   .slider{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex-direction: column-reverse;
+    }
+    .slider_header{
+        width: 100%;
+    }
+    .slider_img{
+        width: 105%;
+    }
+    .slideBtn1 button{
+        position: absolute;
+        left: 0px;
+    }
+    .slideBtn2 button{
+        position: absolute;
+        right: 0px;
+    }
+    .slider_header h3{
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .slider_header h2{
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    .slider_header h1{
+        text-align: center;
+        padding-bottom: 0vh;
+    }
+    .slider_header p{
+        text-align: center;
+        padding-top: 1vh;
+    }
+    .touchWrap form.contactForm, .touchWrap > .touchImage{
+        width: 90%;
+        padding: 20px;
+    }
+    .touchWrap form.contactForm input{
+        width: 100%;
+    }
+    .subscribeInput input{
+        width: 85%;
+    }
+    .footerSector .Logo{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    header .nav_cont{
+        padding: 25px 15px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}

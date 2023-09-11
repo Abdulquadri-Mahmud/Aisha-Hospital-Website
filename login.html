@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Hospital | LogIn Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text">
+                <h1>LogIn</h1>
+            </div>
+            <form action="">
+                <label for="email">
+                    Email:<br>
+                    <input type="email" name="email" id="email" placeholder="Example@gail.com">
+                    <div class="emailIcon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                </label><br>
+                <label for="password">
+                    Password: 
+                    <input type="password" id="passwordInput" name="password" id="password" placeholder="Enter Password" autocomplete>
+                    <div class="lockIcon">
+                        <i class="fas fa-lock" id="password_icon1"></i>
+                        <i class="fas fa-lock-open" id="password_icon2"></i>
+                    </div>
+                </label>
+                <div class="submitButton">
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+                <div class="forgotPassword">
+                    <a href="#">Forgotten Password</a><br>
+                </div>
+                <div class="suggestion">
+                    <span>Not have an account? <a href="signup.html">Sign Up here</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

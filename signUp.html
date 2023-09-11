@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Hospital | Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signUp.css">
+    <script defer src="signUp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text">
+                <h1>SIGN UP</h1>
+            </div>
+            <form action="">
+                <label for="firstname">
+                    Firstname:
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                </label><br>
+                <label for="lastname">
+                    Lastname:
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                </label><br>
+                <label for="Phone">
+                    Phone:
+                    <input type="tel" name="Phone" id="Phone" placeholder="Phone">
+                </label><br>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="Example@gail.com">
+                </label><br>
+                <label for="password">
+                    Password: 
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete>
+                    <div class="lockIcon">
+                        <i class="fas fa-lock" id="password_icon1"></i>
+                        <i class="fas fa-lock-open" id="password_icon2"></i>
+                    </div>
+                </label>
+                <label for="confirmpassword">
+                    Confirm Password: 
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" autocomplete>
+                    <div class="confirmLockIcon">
+                        <i class="fas fa-lock" id="confirmPasswordIcon1"></i>
+                        <i class="fas fa-lock-open" id="confirmPasswordIcon2"></i>
+                    </div>
+                </label>
+                <div class="submitButton">
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+                <div class="suggestion">
+                    <span>Already have an account? <a href="login.html">Login here</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

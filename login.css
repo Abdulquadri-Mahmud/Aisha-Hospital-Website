@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: aliceblue;
+    --color2: #fff;
+    --color3: rgb(2, 21, 42);
+    --background-color: rgb(2, 21, 42);
+}
+body{
+    background: var(--background-color);
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper {
+    width: 300px;
+    border-radius: 10px;
+    background: var(--color);
+    padding: 15px;
+}
+.text{
+    margin-top: 3vh;
+    padding: 7px 7px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--background-color);
+}
+.text h1{
+    color: var(--color2);
+    font-size: 25px;
+    text-align: center;
+}
+form{
+    margin:3vh 0vh;
+    text-align: center;
+}
+form label{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color3);
+}
+form input{
+    width: 80%;
+    margin: 3vh 0vh;
+    height: 40px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--color3);
+    border-radius: 5px 5px 0px 0px;
+    outline: none;
+    font-size: 12px;
+    text-indent: 10px;
+    background-color: rgb(255, 255, 255);
+}
+form label .lockIcon, form label .emailIcon{
+    position: absolute;
+    right: 6px;
+    bottom: 0px;
+}
+#password_icon1{
+    display: block;
+}
+#password_icon2{
+    display: none;
+}
+form .forgotPassword{
+    padding: 3vh 3vh 1vh;
+    display: flex;
+    justify-content: flex-start;
+}
+form .forgotPassword a{
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+form .forgotPassword a:hover{
+    text-decoration: underline;
+}
+.suggestion span{
+    color: var(--color3);
+    font-size: 12px;
+}
+.suggestion span a{
+    color: #000;
+}
+.submitButton{
+    margin-top: 3vh;
+}
+.submitButton button{
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    background: var(--background-color);
+    font-size: 17px;
+    color: var(--color);
+}

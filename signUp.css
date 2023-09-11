@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: aliceblue;
+    --color2: #fff;
+    --color3: rgb(2, 21, 42);
+    --background-color: rgb(2, 21, 42);
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper {
+    width: 300px;
+    padding:10px;
+    border-radius: 10px;
+    background: var(--color);
+}
+.text{
+    margin-top: 2vh;
+    padding: 7px 7px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--background-color);
+}
+.text h1{
+    color: var(--color2);
+    font-size: 25px;
+    text-align: center;
+}
+form{
+    /* margin:2vh 0vh; */
+    text-align: center;
+}
+form label{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color3);
+}
+input{
+    width: 65%;
+    margin: 2vh 0vh;
+    height: 35px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--color3);
+    border-radius: 5px 5px 0px 0px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-indent: 10px;
+}
+input::placeholder{
+    font-size: 10px;
+}
+#lastname{
+    width: 66%;
+}
+#Phone{
+    width: 75%;
+}
+#email{
+    width: 76%;   
+}
+#password{
+    width: 66%;
+}
+#confirmpassword{
+    width: 47%;
+}
+form label .lockIcon, form label .emailIcon, form label .confirmLockIcon{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+#password_icon1{
+    display: block;
+}
+#password_icon2{
+    display: none;
+}
+#confirmPasswordIcon1{
+    display: block;
+}
+#confirmPasswordIcon2{
+    display: none;
+}
+form .suggestion{
+    padding: 0vh 2vh 0vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form .suggestion span{
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--color3);
+    transition: all 0.3s;
+    padding-top: 10px;
+}
+form .forgotPassword a:hover{
+    text-decoration: underline;
+}
+.suggestion span a{
+    color: #000;
+}
+.submitButton{
+    margin-top: 2vh;
+}
+.submitButton button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    background: var(--background-color);
+    font-size: 17px;
+    color: var(--color);
+}
